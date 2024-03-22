@@ -34,6 +34,10 @@ class MainWindow(QMainWindow):
     def tr2word(self):
         pypandoc.convert_file(self.file, 'docx', 'md', outputfile=self.file+'.docx')
         QMessageBox.information(self, "完成！", "完成", QMessageBox.Ok)
+    
+    def tr2pdf(self):
+        pypandoc.convert_file(self.file, 'docx', 'pdf', outputfile=self.file+'.pdf')
+        QMessageBox.information(self, "完成！", "完成", QMessageBox.Ok)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
