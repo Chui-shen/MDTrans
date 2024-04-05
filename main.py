@@ -2,8 +2,12 @@ import markdown
 import pypandoc
 from ui import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
+from PySide6.QtGui import QGuiApplication
+from PySide6.QtCore import Qt
 import sys
 import os
+
+QGuiApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.Ceil)
 
 def BabyMode():
     os.system("pip3 install pypandoc_binary")
