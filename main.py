@@ -9,10 +9,10 @@ import os
 
 QGuiApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.Ceil)
 
-def BabyMode():
-    os.system("pip3 install pypandoc_binary")
-    os.system("pip3 install PySide6")
-    os.system("pip3 install markdown")
+# def BabyMode():
+#     os.system("pip3 install pypandoc_binary")
+#     os.system("pip3 install PySide6")
+#     os.system("pip3 install markdown")
 
 class MainWindow(QMainWindow):
     def __init__(self):
